@@ -8,19 +8,16 @@ repository = "https://github.com/ProCode-Software/klar/tree/main/packages/klar-z
 
 [language_servers.klarls]
 name = "KlarLS"
-languages = ["Klar", "Klon"] # glas.lock files don't need LSP support
+languages = ["Klar", "Klon"]
 
 [grammars.klar]
-repository = 'https://github.com/ProCode-Software/klar'
-path = 'packages/tree-sitter-klar'
-rev = 'e39798b825d16d746318729d4c12e51b390a2dc0'
+repository = "https://github.com/klarlanguage/tree-sitter-klar"
+rev = "578bd06a6be41e82868b0128ea61df8cf2694327"
 
 [grammars.klon]
-repository = 'https://github.com/ProCode-Software/klar'
-path = 'packages/tree-sitter-klon'
-rev = 'e39798b825d16d746318729d4c12e51b390a2dc0'
+repository = "https://github.com/klarlanguage/tree-sitter-klon"
+rev = "4b38ff83d29c2a195bfa4ad91be23d039295bce5"
 
 [grammars.glaslock]
-repository = 'https://github.com/ProCode-Software/klar'
-path = 'packages/tree-sitter-glaslock'
-rev = 'e39798b825d16d746318729d4c12e51b390a2dc0'
+repository = "https://github.com/klarlanguage/tree-sitter-glaslock"
+rev = "86b7b92d6a68eb03e12e8a51993f44e1aae54b9d"
