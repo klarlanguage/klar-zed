@@ -1,4 +1,4 @@
-# Klar for Zed
+# Klar for Zed 🦓
 
 Klar support for [Zed](https://zed.dev)
 
