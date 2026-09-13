@@ -1,4 +1,7 @@
 {
+    "scripts": {
+        "update-repos": "bun run ./scripts/updateGrammars.ts"
+    },
     "dependencies": {},
     "devDependencies": {
         "@types/bun": "^1.4.2"
