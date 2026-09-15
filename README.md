@@ -25,6 +25,10 @@ Contributions should follow our [style guide](https://github.com/ProCode-Softwar
 
 To update the `rev` fields of the grammars in [extension.toml](./extension.toml), run `bun run update-repos` or `bun run scripts/updateGrammars.ts`.
 
+### Formatting
+
+All files in your PRs should be properly formatted. Run [`oxfmt`](https://oxc.rs/docs/guide/usage/formatter.html) to format. Use rusfmt with default settings to format Rust files.
+
 ## License
 
 [Apache-2.0](./LICENSE)
