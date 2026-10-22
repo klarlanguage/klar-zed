@@ -9,6 +9,8 @@ first_line_pattern = "^#!.*\\bklar\\b" # eg. #!/usr/bin/env klar
 autoclose_before = ";:.,=}])>"
 brackets = [
     { start = "{", end = "}", close = true, newline = true },
+    { start = "#{", end = "}", close = true, newline = false },
+    { start = "#/", end = "/", close = true, newline = false },
     { start = "[", end = "]", close = true, newline = true },
     { start = "(", end = ")", close = true, newline = true },
     { start = '"', end = '"', close = true, newline = false },
