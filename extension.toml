@@ -16,7 +16,7 @@ rev = "b9ddd3675c37d1de97927574fd2450415e297646"
 
 [grammars.klon]
 repository = "https://github.com/klarlanguage/tree-sitter-klon"
-rev = "d05ef6e65cc730c59776dd0ceca64a83262af50e"
+rev = "30e9075460f0ccd499cb9f58311c17bd20df6a91"
 
 [grammars.glaslock]
 repository = "https://github.com/klarlanguage/tree-sitter-glaslock"
