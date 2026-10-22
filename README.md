@@ -25,9 +25,20 @@ Contributions should follow our [style guide](https://github.com/ProCode-Softwar
 
 To update the `rev` fields of the grammars in [extension.toml](./extension.toml), run `bun run update-repos` or `bun run scripts/updateGrammars.ts`.
 
+The Tree-sitter grammars are from:
+
+- https://github.com/klarlanguage/tree-sitter-klar
+- https://github.com/klarlanguage/tree-sitter-klon
+- https://github.com/klarlanguage/tree-sitter-glaslock
+
 ### Formatting
 
 All files in your PRs should be properly formatted. Run [`oxfmt`](https://oxc.rs/docs/guide/usage/formatter.html) to format. Use rusfmt with default settings to format Rust files.
+
+### Config References
+
+- [Zed Language Extension Documentation](https://zed.dev/docs/extensions/languages)
+- [Zed Language Config Schema](https://github.com/zed-industries/zed/blob/main/crates/language_core/src/language_config.rs)
 
 ## License
 
