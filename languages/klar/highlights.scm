@@ -167,7 +167,7 @@
     label: _ @variable.parameter))
 
 ; Builtin types
-; https://github.com/ProCode-Software/klar/tree/main/internal/ast/ast.go
+; https://github.com/klarlanguage/klar/tree/main/internal/ast/ast.go
 ((type_alias) @type.builtin
   (#any-of? @type.builtin "Any" "String" "Int" "Float" "Bool" "Nothing" "Result" "Error")
   (#is-not? local))
@@ -222,19 +222,13 @@
 
 ; Initializer
 (call_expression
-  callee: [
-    ((identifier) @type
-      (#match? @type "^_?\\p{Lu}"))
-    (index_expression
-      left: (identifier) @namespace
-      right: ((identifier) @type
-        (#match? @type "^_?\\p{Lu}")))
-  ])
+  callee: ((identifier) @type
+    (#match? @type "^_?\\p{Lu}")))
 
 ; Builtin functions
-; https://github.com/ProCode-Software/klar/tree/main/internal/analysis/builtin.go
+; https://github.com/klarlanguage/klar/tree/main/internal/analysis/builtin.go
 ((identifier) @function.builtin
-  (#any-of? @function.builtin "print" "crashout" "clone" "zip" "TODO")
+  (#any-of? @function.builtin "print" "crashout" "clone" "zip" "TODO" "impossible")
   (#is-not? local))
 
 (lambda_expression
@@ -244,3 +238,29 @@
   label: (identifier) @property)
 
 ; TODO: 'value' in a pipeline
+(loop_label
+  label_name: (_) @label)
+
+; Qualified type (`namespace.Type`)
+(index_expression
+  left: (identifier) @namespace
+  right: ((identifier) @type
+    (#match? @type "^_?\\p{Lu}")))
+
+; Enum reference (`Enum.item`)
+; TODO: Apply this to namespaced enums (`namespace.Enum.item`)
+(index_expression
+  left: ((identifier) @type
+    (#match? @type "^_?\\p{Lu}"))
+  right: ((identifier) @enum
+    (#match? @enum "^_?\\p{Ll}")))
+
+; Statements
+; ===========
+(unqualified_imports
+  name: ((_) @type
+    (#match? @type "^_?\\p{Lu}")))
+
+(unqualified_imports
+  alias: ((_) @type
+    (#match? @type "^_?\\p{Lu}")))
