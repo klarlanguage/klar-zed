@@ -4,7 +4,7 @@ version = "0.0.1"
 schema_version = 1
 authors = ["ProCode Software"]
 description = "Klar support."
-repository = "https://github.com/ProCode-Software/klar/tree/main/packages/klar-zed"
+repository = "https://github.com/klarlanguage/klar-zed"
 
 [language_servers.klarls]
 name = "KlarLS"

@@ -5,7 +5,7 @@ Klar support for [Zed](https://zed.dev)
 ## Features
 
 - 🎨 Syntax highlighting for Klar, Klon, and `glas.lock` files
-- 💡 Language server provided by [KlarLS](https://github.com/ProCode-Software/klar/tree/main/internal/lsp/README.md)
+- 💡 Language server provided by [KlarLS](https://github.com/klarlanguage/klar/tree/main/internal/lsp/README.md)
 
 ## Installation
 
@@ -17,9 +17,9 @@ Klar support for [Zed](https://zed.dev)
 
 ## Contributing
 
-Issues, bug reports, and discussions should be created in the [main Klar repo](https://github.com/ProCode-Software/klar).
+Issues, bug reports, and discussions should be created in the [main Klar repo](https://github.com/klarlanguage/klar).
 
-Contributions should follow our [style guide](https://github.com/ProCode-Software/klar/blob/main/CONTRIBUTING.md#code-style) and [AI policy](https://github.com/ProCode-Software/klar/blob/main/CONTRIBUTING.md#using-ai) in the main Klar repo.
+Contributions should follow our [style guide](https://github.com/klarlanguage/klar/blob/main/CONTRIBUTING.md#code-style) and [AI policy](https://github.com/klarlanguage/klar/blob/main/CONTRIBUTING.md#using-ai) in the main Klar repo.
 
 ### Updating Tree-sitter Grammars
 
