@@ -13,3 +13,11 @@ for (const grammar of Object.values(config.grammars)) {
 }
 
 await Bun.file(extensionTOMLPath).write(Bun.TOML.stringify(config)!)
+
+const klarHighlightsURL =
+    'https://raw.githubusercontent.com/klarlanguage/tree-sitter-klar/main/queries/highlights.scm'
+
+// Sync highlights.scm for Klar
+Bun.file(join(import.meta.dir, '../languages/klar/highlights.scm')).write(
+    await fetch(klarHighlightsURL)
+)
