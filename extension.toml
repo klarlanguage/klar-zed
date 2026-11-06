@@ -12,7 +12,7 @@ languages = ["Klar", "Klon"]
 
 [grammars.klar]
 repository = "https://github.com/klarlanguage/tree-sitter-klar"
-rev = "ae1281fc63130406910f489ecba7c15780336481"
+rev = "daa861df389217fa8daee2dbfb5d217dcc9840e2"
 
 [grammars.klon]
 repository = "https://github.com/klarlanguage/tree-sitter-klon"
